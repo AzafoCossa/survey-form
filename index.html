@@ -5,11 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>FCC | Survey Form</title>
 </head>
 
 <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Let us know how we can improve our services</p>
+    <main>
+        <form action="#" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="age" id="number-label">Age:</label>
+                <input type="number" name="age" id="number" min="1" max="120" placeholder="Enter your age" required>
+            </div>
+            <div class="form-group">
+                <label for="role" id="number-label">Which option best decribes your current role?</label>
+                <select name="role" id="dropdown">
+                    <option value disabled>Select one option</option>
+                    <option value="student">Student</option>
+                    <option value="worker">Full time job</option>
+                    <option value="learner">Full time leaner</option>
+                    <option value="secret">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="recomendation">How likely is that you would recommend freeCodeCamp to a friend?</label>
+                <label for="recomendation">
+                    <input type="radio" checked name="recomendation" value="definetily">Definetily
+                </label>
+                <label for="recomendation">
+                    <input type="radio" name="recomendation" value="maybe">Maybe
+                </label>
+                <label for="recomendation">
+                    <input type="radio" name="recomendation" value="not sure">Not Sure
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="preference" id="number-label">What do you like most in FCC: </label>
+                <select name="preference" id="preference">
+                    <option value disabled>Select one option</option>
+                    <option value="student">Challenges</option>
+                    <option value="worker">Projects</option>
+                    <option value="learner">Community</option>
+                    <option value="secret">Open Source</option>
+                </select>
+            </div>
 
+            <div class="form-group">
+                <label for="improvements">Things that should be improved in the future (check all that apply):
+                </label>
+                <label for="frontend">
+                    <input type="checkbox" name="improvement" id="frontend" value="Front End Projects">Front End
+                    Projects
+                </label>
+                <label for="backend">
+                    <input type="checkbox" name="improvement" id="backend" value="Back End Projects">Back End
+                    Projects
+                </label>
+                <label for="dataVisualization">
+                    <input type="checkbox" name="improvement" id="dataVisualization" value="Data visualization">Data
+                    Visualization
+                </label>
+                <label for="challenges">
+                    <input type="checkbox" name="improvement" id="challenges" value="Challenges">Challenges
+                </label>
+                <label for="opensource">
+                    <input type="checkbox" name="improvement" id="opensource" value="Open Source Community">Open Source
+                    Community
+                </label>
+                <label for="gitterhelp">
+                    <input type="checkbox" name="improvement" id="gitterhelp" value="Gitter Help rooms">Gitter Help
+                    rooms
+                </label>
+                <label for="videos">
+                    <input type="checkbox" name="improvement" id="videos" value="Videos">Videos
+                </label>
+            </div>
+
+            <label class="sugestion" for="additonal">Any Comments or Suggestions?</label>
+            <textarea name="additional" placeholder="Enter your comment here..." id="additonal" cols="10"
+                rows="5"></textarea>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </main>
+
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
